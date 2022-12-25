@@ -1,18 +1,23 @@
-body {
-    height: 200vh;
-}
-
 div {
-    height: 200px;
-    border: 3px solid black;
-}
-
-.red {
     background-color: red;
-    position: sticky;
-    top: 100px;
-    width: 100%;
-    box-sizing: border-box;
-
+    color: white;
+    font-size: 24px;
 }
 
+@media (max-width: 992px) {
+    div {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    div {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    div {
+        font-size: 16px;
+    }
+}
