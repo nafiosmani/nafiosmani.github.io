@@ -1,17 +1,10 @@
-section {
-    height: 80vh;
-    border: 1px solid black;
-}
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border: 15px solid  red;
+    padding: 15px;
+    margin: 15px;
+    box-sizing: border-box;
 
-p {
-    color: blue !important;
 }
-
-.red {
-    color: red;
-}
-
-#title {
-    color: black;
-}
-
