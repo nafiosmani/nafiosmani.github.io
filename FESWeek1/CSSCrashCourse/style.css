@@ -1,0 +1,6 @@
+div {
+    width: 100%;
+    max-width: 200px;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.2);
+}
