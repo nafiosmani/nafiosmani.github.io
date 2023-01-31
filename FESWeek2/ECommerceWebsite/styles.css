@@ -61,6 +61,10 @@ button {
     cursor: pointer;
 }
 
+button:active {
+    transform: translateY(1px);
+}
+
 .btn {
     background-color: #7342d6;
     color: white;
@@ -78,11 +82,6 @@ button {
     width: 160px;
 }
 
-.nav {
-    height: 80px;
-    display: flex;
-}
-
 .nav__container {
     width: 100%;
     max-width: 1200px;
@@ -92,6 +91,8 @@ button {
     align-items: center;
     margin: 0 auto;
 }
+
+
 .nav__link {
     margin-left: 16px;
     text-decoration: none;
@@ -179,7 +180,7 @@ button {
 }
 
 header {
-    height: calc(100vh- 80px);
+    height: calc(100vh - 80px);
 }
 
 .header__container {
@@ -258,9 +259,9 @@ header {
     flex-wrap: wrap;
 }
 
-.highligt {
+.highlight {
     padding: 0 24px;
-    width: calc(100% /3);
+    width: calc(100% / 3);
     display: flex;
     align-items: center;
     flex-direction: column;
