@@ -110,7 +110,7 @@ button:active {
   border-radius: 4px;
 }
 
-.nav_link--primary:hover {
+.nav__link--primary:hover {
   text-decoration: none;
 }
 
@@ -232,7 +232,7 @@ header {
 }
 /* 
 
-HIGLGIHTS 
+HIGHLGIHTS 
 
 */
 
@@ -295,7 +295,7 @@ HIGLGIHTS
   margin-bottom: 24px;
 }
 
-.higlight__subtitle {
+.highlight__subtitle {
   font-size: 20px;
   margin-bottom: 16px;
   text-align: center;
