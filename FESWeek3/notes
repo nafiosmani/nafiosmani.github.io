@@ -1,0 +1,60 @@
+data types
+string -
+"Hello World"
+"Frontedn Simplified is amazing"
+"100"
+
+number
+
+typeof "datatype" will give datatype
+
+boolean t/f
+
+undefined
+- not set by developer
+
+null 
+- value of nothing
+
+crtl + / = comment
+
+variables
+store data
+
+var
+let
+const
+
+== checks values
+
+==== checks values adn types
+
+!= not equal
+
+!== not equal value and equal type
+
+>
+<
+>=
+<=
+
+&& = and
+|| = or
+
+
+=== false same as !variable
+=== true same as variable
+
+falsy var -> convert to bolean is false
+undefined
+null
+NaN
+0
+""
+false
+
+
+truthy var 
+
+!!0 false -> falsy value
+!!"0" true -> truthy val
