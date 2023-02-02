@@ -171,3 +171,99 @@
 // let newArr= arr.filter(element => element <50) 
 // console.log(newArr)
 
+// let grades = ['A+', 'A', 'FAIL']
+
+// // let goodGrades = grades.filter(element => element != 'FAIL')
+
+// // console.log(goodGrades)
+
+
+// //create cope new empty arr
+// let goodGrades = []
+
+// for(let i = 0; i <grades.length-1; i++) {
+//     if (grades[i] != 'FAIL'){
+//         goodGrades.push(grades[i]);
+//     }
+//     //add current element onto goodGrades onli if
+//     //current element is not equal to 'FAIL'
+//     console.log(grades[i])
+// }
+
+// // console log 'goodGrades'
+
+// let arr = [1,4,9,16]
+
+// let newArray = arr.map(element => 'dog');
+
+// console.log(newArray)
+
+// let dollars = [1,5,10,3]
+
+// // let cents = dollars.map(element => element *100)
+// // create new cents array
+// //loop over every element in dollars
+// //multiply by 100
+// //return
+// let cents = []
+// for (let i = 0; i< dollars.length; i++) {
+//     cents.push(dollars[i]*100)
+// }
+
+// console.log(cents)
+
+// let userFirstName = 'Nafi'
+// let userLastName = 'Osmani'
+// let userDiscordID = 'NafiOsmani#0001'
+// let userSUbscriptionStatus = 'VIP'
+
+// let users = [
+//     {
+//     username: 'Nafi',
+//     email: 'nafiosmani@gmail.com',
+//     password: 'test123',
+//     subscriptionStatus: 'VIP',
+//     discordID: 'Nafi Osmani#0001',
+//     lessonsCompleted: [0, 1]
+
+//     },
+//     {
+//     username: 'Mitir',
+//     email: 'mitir@gmail.com',
+//     password: 'mitir123',
+//     subscriptionStatus: 'VIP',
+//     discordID: 'Mitir#0001',
+//     lessonsCompleted: [0, 1, 2, 3]
+    
+//     }
+// ];
+
+// function login(email, password) {
+//     for (let i = 0; i<users.length; ++i) {
+//         if (users[i].email === email) {
+//             console.log(users[i]);
+//             if (users[i].password === password) {
+//                 console.log('log the user in - the details are correct')
+//             }
+
+//             else {
+//                 console.log('password is incorrect - try again')
+//             }
+
+//             return;
+//         }
+        
+
+//     }
+//     console.log('could not find email that matches')
+    
+// }
+
+// login('nafiosmani@gmail.com', 'wrong password');
+
+// console.log(users[0].username[0]);
+
+// console.log(users[0].subscriptionStatus);
+
+// console.log(users[0].lessonsCompleted.map(elem => elem*2));
+
