@@ -74,3 +74,4 @@ function isLoggAndSub(Log, Sub) {
 }
 
 console.log(isLoggAndSub('LOG', 'SUB'))
+
