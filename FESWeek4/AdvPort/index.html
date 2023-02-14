@@ -24,61 +24,304 @@
   </head>
 
   <body>
-    <section id="landingpage">
+    <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure>
-          <img id="personal-logo" src="./assets/logo.svg" alt="" />
+          <img id="personal-logo" src="./assets/logo.svg" alt="">
         </figure>
         <ul class="nav__link--list">
-          <li class="nav__link" onclick="toggleMode1()">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >About</a
-            >
+          <li class="nav__link" onclick="toggleModal()">
+            <a href="#" class="
+              nav__link--anchor
+              link__hover-effect
+              link__hover-effect--black
+            ">About</a>
           </li>
-          <li class="nav__link" onclick="toggleMode1()">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >Projects</a
-            >
+          <li class="nav__link">
+            <a href="#projects" class="
+              nav__link--anchor
+              link__hover-effect
+              link__hover-effect--black
+            ">Projects</a>
           </li>
-          <li class="nav__link" onclick="toggleMode1()">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >Contact</a
-            >
+          <li class="nav__link" onclick="toggleModal()">
+            <a href="#" class="
+              nav__link--anchor
+              link__hover-effect
+              link__hover-effect--black
+            ">Contact</a>
           </li>
           <li class="nav__link click" onclick="toggleContrast()">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              ><i class="fas fa-adjust"></i
-            ></a>
+            <a href="#" class="
+              nav__link--anchor
+              link__hover-effect
+              link__hover-effect--black
+            "><i class="fas fa-adjust"></i></a>
           </li>
         </ul>
       </nav>
       <header class="header">
         <div class="header__content">
           <h1 class="title">Hey</h1>
-          <h1 class="title orange">I'm Nafi</h1>
+          <h1 class="title orange">I'm Nafi.</h1>
           <p class="header__para">
-            I'm a <b class="orange">Frontend Software Engineer</b> with a strong
-            passion for building web applications with great user experiences.
-            <br />
-            Here's a bit more
-            <b class="orange click" onclick="toggleModal()">about me</b>.
+            I'm a <b class="orange">Fullstack Software Engineer</b> with a strong passion for building web applications
+            with great user
+            experiences.
+            <br>
+            Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
           </p>
           <div class="social__list">
-            <a href="https://www.linkedin.com/in/david-bragg-5b23a1176/" target="_blank" class="social__link click">
-                <i class="fab fa-linked-in"></i>
+            <a href="https://www.linkedin.com/in/nafiosmani/" target="_blank" class="social__link click">
+              <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/nafiosmani"></a>
+            <a href="https://github.com/nafiosmani" target="_blank" class="social__link click">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="./assets/OsmaniResume - Google Docs.pdf" target="_blank" class="social__link click">
+              <i class="fas fa-file-pdf"></i>
+            </a>
           </div>
         </div>
       </header>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </a>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+          <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
+          <p class="modal__para">
+            I'm a 20 year-old American <b class="orange">fullstack software engineer</b> with experience developing
+            embedded software for engineering teams like <b class="orange">Raytheon</b> and <b class="orange">Illini Solar Car</b>.
+            <br>
+            I currently solve extremely difficult engineering
+            problems every day with <b class="orange">C++</b>, <b class="orange">Python</b> and <b
+              class="orange">JavaScript</b>
+            in Illini Solar Car's Electrical Engineering team.
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt="">
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt="">
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt="">
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt="">
+              <span class="language__name">TypeScript</span>
+            </figure>
+  
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://mobx.js.org/img/mobx.png" alt="">
+              <span class="language__name">MobX</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                alt="">
+              <span class="language__name">React</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" alt="">
+              <span class="language__name">Vue</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png" alt="">
+              <span class="language__name">Nuxt</span>
+            </figure>
+          </div>
+        </div>
+       
+        <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">
+            Let's have a chat!
+          </h3>
+          <h3 class="modal__sub-title modal__sub-title--contact">
+            I'm currently open to new opportunities.
+          </h3>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea class="input" name="message" type="text" required></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking to you soon.
+          </div>
+        </div>
+      </div>
+      <img src="./assets/semi circle.svg" class="shape shape--0">
+      <img src="./assets/circle.svg" class="shape shape--1">
+      <img src="./assets/squiggly.svg" class="shape shape--2">
+      <img src="./assets/circle.svg" class="shape shape--3">
+      <img src="./assets/triangle.svg" class="shape shape--4">
+      <img src="./assets/circle.svg" class="shape shape--5">
+      <img src="./assets/squiggly.svg" class="shape shape--6">
+      <img src="./assets/circle.svg" class="shape shape--7">
+      <img src="./assets/semi circle.svg" class="shape shape--8">
     </section>
+    
+    
+    
+    
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="orange">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/google mockup.png" class="project__img" alt="">
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Amazon Store Site
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, React
+                  </h4>
+                  <p class="project__description--para">
+                    Made a clone of Amazon's Store using React JS. Fully functional E-Commerce site with Stripe payment gateway.
+                  </p>
+                  <div class="project__description--links">
+                    <a href="https://googleinstore.com.au/" class="project__description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/Frontend Simplified.png" class="project__img" alt="">
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Uber App
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, Navigation, Redux, Tailwind, React Native
+                  </h4>
+                  <p class="project__description--para">
+                    Built Uber App with React Native (for both iOS and Android). Used Tailwind CSS wit RN for styling. Uses Google Distance Matrix API to calculate travel time, distance, and fare. Uses Google places API for real naviation. Uses Apple & Google Maps for iOS & Android. Uses React Native Navigation to navigate between screens. Uses React Native Elements to elevate app design.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/Eportfolio YT.png" class="project__img" alt="">
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Coinbase App
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, Naxt.js, Sanity.io, thirdweb
+                  </h4>
+                  <p class="project__description--para">
+                    Built Web3 3.0 App wih Next JS. Stlyed App using Styled Components. Create and mint your own cryptocurrency tokens using the thirdweb SDK. Adding Web 3.0 authentication using Metamask. Storing data and information about the tokens you creatred in Sanity.io. Using GROQ to retrieve data from Sanity Studio and display in in my Web 3.0 app. Created a send and receive functionality for your tokens on the blockchain. Deplay and ost the app on Vercel.
+                  </p>
+                  <div class="project__description--links">
+                    <a href="https://github.com/davidbr4gg/nafiosmani.github.io" target="_blank"
+                      class="project__description--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://github.com/nafiosmani/nafiosmani.github.io" target="_blank" class="project__description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <a href="#" class="footer__anchor">
+            <figure class="footer__logo">
+              <img src="./assets/logo.svg" class="footer__logo--img" alt="">
+            </figure>
+            <span class="footer__logo--popper">
+              Top
+              <i class="fas fa-arrow-up"></i>
+            </span>
+          </a>
+          <div class="footer__social--list">
+            <a href="https://github.com/nafiosmani" class="
+            footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+          ">
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/nafiosmani/" target="_blank" class="
+            footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+          ">
+              LinkedIn
+            </a>
+            <a href="#" onclick="toggleModal()" class="
+            footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+          ">
+              Contact
+            </a>
+            <a href="./assets/OsmaniResume - Google Docs.pdf" target="_blank" class="
+            footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+          ">
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">Copyright &copy; 2023 Nafi Osmani</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+    
+    
+    
+
   </body>
 </html>
