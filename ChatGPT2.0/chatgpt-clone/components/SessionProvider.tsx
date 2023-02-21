@@ -9,8 +9,9 @@ type Props = {
 }
 
 export function SessionProvider({ children, session}: Props) {
-    return {
+    return (
         <Provider session={session}>
             {children}
         </Provider>
-    };
+    );
+}
