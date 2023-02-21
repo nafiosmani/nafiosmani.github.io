@@ -2,6 +2,7 @@
   "dependencies": {
     "@heroicons/react": "^2.0.16",
     "firebase": "^9.17.1",
-    "next-auth": "^4.19.2"
+    "next-auth": "^4.19.2",
+    "react-firebase-hooks": "^5.1.1"
   }
 }
