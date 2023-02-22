@@ -2,7 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { adminDb } from "../../firebaseAdmin";
 import admin from "firebase-admin";
-import query from "../../lib/queryAPI";
+import query from "../../lib/queryApi";
 
 type Data = {
   answer: string;
