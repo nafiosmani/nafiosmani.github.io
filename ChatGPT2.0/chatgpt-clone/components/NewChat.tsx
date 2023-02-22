@@ -21,16 +21,20 @@ function NewChat() {
         
         );
 
-        router.push(' /chat/${doc.id}')
+        router.push(`
+        /chat/${doc.id}
+    `);
     };
 
   return (
-    <div onClick={createNewChat} className='border-gray-700 border chatRow'>
+    <div 
+        onClick={createNewChat} 
+        className='border-gray-700 border chatRow items-center justify-center'>
         <PlusIcon className="h-4 w-4" />
-        <p>New Chat</p>
+        <p className='hidden md:inline-flex flex-1'>New Chat</p>
     </div>
 
-  )
+  );
 }
 
-export default NewChat
+export default NewChat;
