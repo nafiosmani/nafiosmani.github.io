@@ -1,16 +1,15 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Highlights from './components/Highlights';
 import Nav from './components/Nav';
-import Home from "./pages/Home";
-import Books from "./pages/Books";
-import BookInfo from "./pages/BookInfo";
-import { books } from "./data";
-import Footer from "./components/Footer";
-import Cart from "./pages/Cart";
+import Landing from './components/Landing';
 
 function App() {
   return (
     <div className="App">
       <Nav />
+      <Landing />
+      <Highlights />
     </div>
   );
 }
