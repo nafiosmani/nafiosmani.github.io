@@ -14,15 +14,12 @@ import Users from './pages/Users.jsx';
 
 function App() {
   return (
-    <div>
       <Router>
-        <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/users/:username" element={<Users />} />
         </Routes>
       </Router>
-    </div>
   );
 }
   
@@ -46,7 +43,7 @@ function App() {
 //   }, [])
 
 //   useEffect(() => {
-//     console.log('on mount AND on ${showModal}  change')
+//     console.log(`on mount AND on ${showModal}  change`)
 //   }, [showModal])
 
 //   useEffect(() => {
