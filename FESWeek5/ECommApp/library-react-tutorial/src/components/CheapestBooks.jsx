@@ -1,14 +1,14 @@
-import React from 'react';
-import Book from './ui/Book';
-import { books } from '../data';
+import React from "react";
+import Book from "./ui/Book";
+import { books } from "../data";
 
-const CheapestBooks = () => {
+const Features = () => {
   return (
-    <section id='recent'>
+    <section id="recent">
       <div className="container">
         <div className="row">
           <h2 className="section__title">
-            Discount <span className="purple">Books</span>
+            Discounted <span className="purple">Books</span>
           </h2>
           <div className="books">
             {books
@@ -25,4 +25,4 @@ const CheapestBooks = () => {
   );
 };
 
-export default CheapestBooks;
+export default Features;
