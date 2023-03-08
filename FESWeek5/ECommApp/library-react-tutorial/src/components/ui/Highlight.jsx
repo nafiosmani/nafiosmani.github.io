@@ -15,3 +15,4 @@ const Highlight = ({ icon, title, para}) => {
 };
 
 export default Highlight;
+

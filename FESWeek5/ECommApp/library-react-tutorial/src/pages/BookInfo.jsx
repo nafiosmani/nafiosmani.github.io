@@ -74,3 +74,4 @@ const BookInfo = ({ books, addItemToCart }) => {
 };
 
 export default BookInfo;
+

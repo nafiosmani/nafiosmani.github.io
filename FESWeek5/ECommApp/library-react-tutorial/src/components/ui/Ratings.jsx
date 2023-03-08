@@ -13,3 +13,4 @@ const Ratings = ({ rating }) => {
 };
 
 export default Ratings;
+

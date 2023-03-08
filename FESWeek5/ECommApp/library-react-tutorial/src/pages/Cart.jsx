@@ -100,3 +100,4 @@ const Cart = ({ cart, updateCart, removeItem, totals }) => {
 };
 
 export default Cart;
+

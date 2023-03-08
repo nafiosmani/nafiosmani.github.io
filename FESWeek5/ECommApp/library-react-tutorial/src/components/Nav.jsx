@@ -70,3 +70,4 @@ const Nav = ({ numberOfItems }) => {
 };
 
 export default Nav;
+
