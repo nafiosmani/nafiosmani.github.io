@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams, useNa } from 'react-router-dom';
 import axios from 'axios';
 
 const Posts = () => {
@@ -20,6 +20,12 @@ const Posts = () => {
         setPosts(data);
         setLoading(false);
     }
+
+    function onSearchKeyPress(key) {
+        if (key === 'Enter') {
+            onSearch();
+        }
+    }
     useEffect(() => {
         fetchPosts();
     }, []);
@@ -27,7 +33,9 @@ const Posts = () => {
     return (
         <>
             <div className="post__search">
+                <Link to='/'>
                 <button>← Back</button>
+                </Link>
                 <div className="post__search--container">
                     <label className="post__search--label">Search by Id</label>
                     <input
