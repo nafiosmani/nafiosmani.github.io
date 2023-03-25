@@ -1,3 +1,2 @@
 # nafiosmani.github.io
-E-Portfolio
-Frontend Portfolio
+Main Repo
