@@ -9,8 +9,22 @@
  * anagrams('frontend', 'simplified') === false
  */
 
+
 const anagrams = (strA, strB) => {
-    
+    const aCharMap = buildCharMap(strA);
+    const bCharMap = buildCharMap(strB);
+
+    if (Object.keys(aCharMap).length !== Object.keys(bCharMap).length) {
+        return false;
+    }
+
+    for (let char in aCharMap) {
+        if (aCharMap[char] !== bCharMap[char]) {
+            return false;
+        }
+    }
+
+    return true;
 }
 
 module.exports = anagrams;

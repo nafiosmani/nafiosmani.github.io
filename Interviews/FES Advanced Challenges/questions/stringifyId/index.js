@@ -17,6 +17,9 @@
  */
 
 const stringifyId = (arr) => {
+    const ids = arr.map((obj) => obj.id);
+    const uniqueIds = new Set(ids);
+    return Array.from(uniqueIds).join(', ');
 
 };
 

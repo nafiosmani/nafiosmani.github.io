@@ -1,4 +1,4 @@
-/** Reverse the provided string.
+ /** Reverse the provided string.
  *
  * @example
  * reverse('david') === 'divad'
