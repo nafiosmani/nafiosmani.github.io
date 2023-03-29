@@ -18,6 +18,15 @@
  */
 
 const pyramid = (n) => {
+    let result = '';
+    let spaces = ' '.repeat(n - 1);
+    let hashes = '#'.repeat(1);
+    for (let i = 1; i <= n; i++) {
+        result += spaces + hashes + spaces + '\n';
+        spaces = spaces.slice(0, -1);
+        hashes += '##';
+    }
+    return result;
   
 };
 
