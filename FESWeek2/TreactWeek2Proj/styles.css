@@ -264,3 +264,20 @@ h1 {
     color: white;
 }
 
+.btn:active {
+    opacity: 0.85;
+    transform: translateY(1px);
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.header__customers {
+    font-size: 12px;
+    font-weight: 700;
+    color: #a0aec0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 80px;
+}
