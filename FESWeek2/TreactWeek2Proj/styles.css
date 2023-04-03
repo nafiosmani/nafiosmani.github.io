@@ -997,9 +997,7 @@ h1 {
 
 /* SLIDE */
 
-#landing,
-#quality,
-#pricing {
+#landing {
   animation: slideIn 0.5s ease forwards;
 }
 
@@ -1012,8 +1010,6 @@ h1 {
   }
 }
 
-#features,
-#steps,
 #footer {
   animation: slideOut 0.5s ease forwards;
 }
@@ -1030,9 +1026,7 @@ h1 {
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES  */
 
 @media (max-width: 550px) {
-  .plan {
-    width: 75%;
-  }
+
   .nav__container {
     height: 60px;
   }
@@ -1054,93 +1048,12 @@ h1 {
   .header__customers--img {
     width: 78%;
   }
-  .features__text--2 {
-    font-size: 30px;
-  }
-  .features__text--3 {
-    font-size: 16px;
-  }
-  .features {
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 16px 0 0 0;
-  }
-  .features__service--description {
-    margin: 8px 0 0 0;
-  }
+
   .bottom--order {
     order: 2;
   }
-  .quality__section--container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .quality__img {
-    max-width: 440px;
-    height: auto;
-  }
-  .quality__description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 50px;
-    width: 100%;
-    max-width: 448px;
-  }
-  .quality__description--text {
-    text-align: center;
-    font-size: 14px;
-  }
-  .quality__description--wrapper {
-    margin: 0;
-  }
-  .steps__container {
-    flex-direction: column;
-  }
-  .steps__img {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 448px;
-  }
-  .steps__description {
-    width: 100%;
-    max-width: 448px;
-    text-align: center;
-  }
-  .steps__description--wrapper {
-    margin: 0;
-  }
-  .steps__description--list {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .steps__description--list--text--title {
-    padding-top: 8px;
-  }
-  .steps__description--list--text {
-    margin-left: 0;
-  }
-  .pricing__plans {
-    flex-direction: column;
-    align-items: center;
-  }
-  .pricing__plan {
-    width: 100%;
-    max-width: 500px;
-    overflow: visible;
-    display: flex;
-    justify-content: center;
-  }
-  .pricing__row {
-    padding-top: 0;
-  }
+ 
+
   .footer__info {
     flex-direction: column;
   }
@@ -1214,15 +1127,5 @@ h1 {
   .nav__link {
     padding: 0 8px;
   }
-  .features {
-    width: 50%;
-  }
-  .plans {
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .plan {
-    width: 65%;
-  }
+
 }
