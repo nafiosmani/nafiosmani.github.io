@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -190,3 +190,77 @@ li {
   padding: 8px;
   color: #242424;
 }
+
+/* HEADER */
+
+.header__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 80px 32px;
+}
+
+.header__desc {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.header_desc--title {
+    font-size: 48px;
+}
+
+.header__desc--text {
+    margin: 32px 0;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.25;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+
+}
+
+.header__start {
+    position: relative;
+}
+
+.header__input {
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #e5e7eb;
+    border-radius: 50px;
+    width: 100%;
+    padding: 24px;
+}
+
+.btn__header {
+    background-color: #6415ff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 16px 32px;
+    margin: 8px 8px 8px 0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition-duration: .3s;
+    border: none;
+    z-index: 2;
+
+}
+
+.btn__header:hover {
+    background-color: #5813e2;
+    text-decoration: none;
+    color: white;
+}
+
