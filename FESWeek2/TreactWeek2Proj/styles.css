@@ -7,5 +7,32 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Make nav bar going across */
+
+/* NAV */
+
+.nav__container {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 100px;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
 
