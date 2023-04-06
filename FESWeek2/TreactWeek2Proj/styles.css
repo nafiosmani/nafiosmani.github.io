@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+@import  url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -1002,31 +1002,39 @@ h1 {
 /* SLIDE */
 
 #landing,
-#quality {
+#quality,
+#pricing {
   animation: slideIn 0.5s ease forwards;
 }
 
 @keyframes slideIn {
+
   0% {
     transform: translateX(-900px);
   }
+
   100% {
     transform: translateX(0);
   }
+
 }
 
 #footer,
-#features {
+#features,
+#steps {
   animation: slideOut 0.5s ease forwards;
 }
 
 @keyframes slideOut {
+
   0% {
     transform: translateX(900px);
   }
+
   100% {
     transform: translateX(0);
   }
+
 }
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES  */
@@ -1036,30 +1044,38 @@ h1 {
   .nav__container {
     height: 60px;
   }
+
   .footer__link--list {
     margin: 48px 8px;
   }
 }
 
 @media (max-width: 768px) {
+
   .header__container {
     padding: 32px 0;
   }
+
   .header__description--title {
     font-size: 30px;
   }
+
   .header__description--text {
     font-size: 16px;
   }
+
   .header__customers--img {
     width: 78%;
   }
+
   .features__text--2 {
     font-size: 30px;
   }
+
   .features__text--3 {
     font-size: 16px;
   }
+
   .features {
     width: 100%;
     flex-direction: column;
@@ -1068,9 +1084,11 @@ h1 {
     text-align: center;
     padding: 16px 0 0 0;
   }
+
   .features__service--description {
     margin: 8px 0 0 0;
   }
+
   .bottom--order {
     order: 2;
   }
@@ -1080,10 +1098,12 @@ h1 {
     align-items: center;
     justify-content: center;
   }
+
   .quality__img {
     max-width: 440px;
     height: auto;
   }
+
   .quality__description {
     display: flex;
     flex-direction: column;
@@ -1093,10 +1113,12 @@ h1 {
     width: 100%;
     max-width: 448px;
   }
+
   .quality__description--text {
     text-align: center;
     font-size: 14px;
-  }
+  } 
+
   .quality__description--wrapper {
     margin: 0;
   }  
@@ -1104,28 +1126,34 @@ h1 {
   .steps__container {
     flex-direction: column;
   }
+
   .steps__img {
     display: flex;
     justify-content: center;
     width: 100%;
     max-width: 448px;
   }
+
   .steps__description {
     width: 100%;
     max-width: 448px;
     text-align: center;
   }
+
   .steps__description--wrapper {
     margin: 0;
   }
+
   .steps__description--list {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .steps__description--list--text--title {
     padding-top: 8px;
   }
+
   .steps__description--list--text {
     margin-left: 0;
   }
@@ -1133,63 +1161,81 @@ h1 {
   .footer__info {
     flex-direction: column;
   }
+
   .footer__info--copyright {
     margin-top: 32px;
   }
+
   .footer__info--social {
     margin-top: 32px;
   }
+
   .footer__link {
     margin-left: 0;
     text-align: center;
   }
+
   .footer__links {
     flex-wrap: wrap;
   }
+  
   .footer__link--list {
     margin: 64px 32px;
   }
+
   .footer__link--header {
     text-align: center;
   }
+
 }
 
 @media (max-width: 1024px) {
+
   .nav__links {
     display: none;
   }
+
   .btn__menu {
     display: block;
   }
+
   .btn__menu--close {
     font-size: 28px;
   }
+
   .menu__link {
     font-size: 22px;
   }
+
   .header__container {
     flex-direction: column;
   }
+
   .header__description,
   .header__img--wrapper {
     width: 68%;
     text-align: center;
     align-items: center;
   }
+
   .header__description--title {
     font-size: 32px;
   }
+
   .header__description--text {
     max-width: 450px;
   }
+
   .header__customers {
     margin-bottom: 24px;
   }
+
   .btn__header {
     position: relative;
     margin: 16px 0 0 0;
     width: 100%;
   }
+
   .header__customers {
     display: flex;
     flex-direction: column;
@@ -1197,11 +1243,14 @@ h1 {
     justify-content: center;
     margin-top: 32px;
   }
+
   .header__customers--img {
     width: 68%;
   }
+
   .nav__link {
     padding: 0 8px;
   }
+
 
 }
