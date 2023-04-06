@@ -483,6 +483,83 @@ h1 {
   color: white;
 }
 
+/* STEPS */
+
+.steps__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  padding: 96px 32px;
+}
+
+.steps__img {
+  flex-shrink: 0;
+  position: relative;
+  width: 50%;
+}
+
+.steps__description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+}
+
+.steps__description--wrapper {
+  padding: 32px 0;
+  margin-left: 56px;
+}
+
+.steps__description--header {
+  margin-top: 16px;
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: 0.4px;
+  font-size: 48px;
+  color: #243e63;
+}
+
+.steps__description--lists {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.steps__description--list {
+  margin-top: 32px;
+  display: flex;
+}
+
+.steps__description--list--number {
+  font-weight: 600px;
+  font-size: 36px;
+  line-height: 1;
+  color: #cbd5e0;
+}
+
+.steps__description--list--text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+.steps__description--list--text--title {
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.steps__description--list--text--info {
+  margin-top: 12px;
+  max-width: 320px;
+  line-height: 2;
+  font-size: 14px;
+  font-weight: 500;
+  color: #718096;
+}
 
 /* FOOTER */
 
@@ -782,6 +859,35 @@ h1 {
   .quality__description--wrapper {
     margin: 0;
   }  
+
+  .steps__container {
+    flex-direction: column;
+  }
+  .steps__img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 448px;
+  }
+  .steps__description {
+    width: 100%;
+    max-width: 448px;
+    text-align: center;
+  }
+  .steps__description--wrapper {
+    margin: 0;
+  }
+  .steps__description--list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .steps__description--list--text--title {
+    padding-top: 8px;
+  }
+  .steps__description--list--text {
+    margin-left: 0;
+  }
 
   .footer__info {
     flex-direction: column;
