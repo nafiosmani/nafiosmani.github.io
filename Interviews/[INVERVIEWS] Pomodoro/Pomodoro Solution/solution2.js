@@ -32,10 +32,11 @@ function resetTimer() {
   startTime = Date.now();
   savedTime = 0;
 
-  timerMilliSeconds.innerHTML = "000"
+  timerMilliSeconds.innerHTML = "000" 
   timerSeconds.innerHTML = "00";
   timerMinutes.innerHTML = "25";
 }
+
 
 function updateTimer() {
   let millisElapsed = Date.now() - startTime + savedTime
