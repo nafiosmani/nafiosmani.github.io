@@ -19,9 +19,39 @@ async function fetchUserData(id) {
 }
 
 // Put your code here
-// ------------------
 
-// ------------------
+// Fetch user ids
+
+//Get user data in promise
+
+// wait for user data inside promises
+
+// turn user data into html
+
+
+// async function main() {
+//   const userIds = await fetchFollowerIds();
+//   const users = userIds.map((id) => fetchUserData(id));
+//   const usersData = await Promise.all(users);
+//   document.querySelector(".followers").innerHTML = usersData
+//     .map((user) => userHtml(user))
+//     .join("");
+
+
+// }
+
+// function userHtml(user) {
+//   return `
+//   <div class="profile">
+//     <img class="profile__avatar" src=${user.avatar}>
+//     <div class="profile__info">
+//       <p class="profile__username">${user.username}</p>
+//       <p class="profile__bio">${user.bio}</p>
+//     </div>
+//     <button class="profile__unfollow">Remove</button>
+//   </div>
+//   `;
+// }
 
 // Fake data - do not access USERS directly in your solution
 const USERS = [
